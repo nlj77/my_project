@@ -1,0 +1,21 @@
+// .vscode/settings.json
+{
+    "editor.formatOnSave": true,
+    // --- Ruby Interpreter (force rbenv) ---
+    "ruby.interpreter.commandPath": "/home/nick/.rbenv/shims/ruby",
+    // --- Use login shell in integrated terminal (so rbenv loads) ---
+    "terminal.integrated.shellArgs.linux": [
+        "-l"
+    ],
+    // --- Ruby LSP options ---
+    "ruby.lsp.useBundler": true,
+    "ruby.lsp.format": true,
+    "ruby.lsp.diagnostics": true,
+    // --- Test Explorer ---
+    "ruby.testExplorer.rspecEnabled": true,
+    "ruby.testExplorer.autoDiscover": true,
+    "ruby.testExplorer.rspecPath": "bundle exec rspec",
+    // --- Optional: disable Mise warnings for this project ---
+    "ruby.lsp.miseIntegration.enabled": false,
+    "rubyLsp.enabled": true
+}
